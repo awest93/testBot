@@ -1,0 +1,63 @@
+{
+    "dbName":"quiz_bot.sqlite",
+    "apiToken":"6535203643:AAGdd2cquuNWpKIpVpGsP8tgAsULMTTnr2w",
+    "populateDBScript":"populateDB.sql",
+    "quizData":
+    [
+        {
+            "question": "Что такое Python?",
+            "options": ["Язык программирования", "Тип данных", "Музыкальный инструмент", "Змея на английском"],
+            "correct_option": 0
+        },
+        {
+            "question": "Какой тип данных используется для хранения целых чисел?",
+            "options": ["int", "float", "str", "natural"],
+            "correct_option": 0
+        },
+        {
+            "question": "Как выглядит корректный синтаксис для вывода \"Hello World\" в Python?",
+            "options": ["echo \"Hello World\"", "print(\"Hello World\")", "p(\"Hello World\")", "WriteLine(\"Hello World\");"],
+            "correct_option": 1
+        },
+        {
+            "question": "Как определяются комментарии в коде Python?",
+            "options": ["//This is a comment", "/*This is a comment*/", "#This is a comment", "<--This is a comment-->"],
+            "correct_option": 2
+        },
+        {
+            "question": "Какой вариант наименования переменной НЕ является корректным?",
+            "options": ["Myvar", "my_var", "my-var", "_myvar"],
+            "correct_option": 2
+        },
+        {
+            "question": "Как осуществить создание переменной с целочисленным знчением 5?",
+            "options": ["Все варианты верны", "x = new int(5)", "int x = 5;", "x = 5"],
+            "correct_option": 3
+        },
+        {
+            "question": "Как выглядит корректный синтаксис для определения типа переменной в Python?",
+            "options": ["typeof(x)", "type(x)", "varType(x)", "x.type"],
+            "correct_option": 1
+        },
+        {
+            "question": "Как выглядит корректный синтаксис для создания функции в Python?",
+            "options": ["function myFunction():", "create myFunction():", "def myFunction():", "void myFunction():"],
+            "correct_option": 2
+        },
+        {
+            "question": "В Python 'x' то же самое что и \"x\"?",
+            "options": ["Да", "Нет", "Только при выполнении определённых условий"],
+            "correct_option": 0
+        },
+        {
+            "question": "Какой метод используется для удаления пробелов с начала и с конца строки?",
+            "options": ["trim()", "ptrim()", "len()", "strip()"],
+            "correct_option": 3
+        },
+        {
+            "question": "Какой код определяет тип \"Список\" (\"List\")?",
+            "options": ["{\"name\":\"apple\", \"color\":\"green\"}}", "{\"apple\", \"banana\", \"cherry\"}", "[\"apple\", \"banana\", \"cherry\"]", "(\"apple\", \"banana\", \"cherry\")"],
+            "correct_option": 2
+        }
+    ]
+}

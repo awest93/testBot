@@ -1,0 +1,6 @@
+# Sqlite DB file
+*.sqlite
+
+# Others
+__pycache__/
+.vscode/
