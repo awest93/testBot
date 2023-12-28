@@ -1,5 +1,6 @@
 import aiosqlite
 
+#modified base code
 async def create_table(DB_NAME):
     async with aiosqlite.connect(DB_NAME) as db:
         await db.execute('''CREATE TABLE IF NOT EXISTS quiz_state 
@@ -20,6 +21,12 @@ async def get_quiz_index(DB_NAME, user_id):
             else:
                 return 0
 
+async def update_quiz_index(DB_NAME, user_id, index):
+    async with aiosqlite.connect(DB_NAME) as db:
+        await db.execute('update quiz_state set question_index = ? where user_id=?', (index, user_id))
+        await db.commit()
+
+#added code
 async def registerNewUser(DB_NAME, user_id):
     async with aiosqlite.connect(DB_NAME) as db:
         async with db.execute('SELECT * FROM quiz_state WHERE user_id = (?)', [user_id]) as cursor:
@@ -37,11 +44,6 @@ async def getUserId(DB_NAME, user_id):
                 return results[0]
             else:
                 return -1
-
-async def update_quiz_index(DB_NAME, user_id, index):
-    async with aiosqlite.connect(DB_NAME) as db:
-        await db.execute('update quiz_state set question_index = ? where user_id=?', (index, user_id))
-        await db.commit()
 
 async def populateDB(DB_NAME, populateSQLScript):
     async with aiosqlite.connect(DB_NAME) as db:

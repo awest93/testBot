@@ -2,6 +2,7 @@ from aiogram.utils.keyboard import InlineKeyboardBuilder
 from aiogram import types
 import callbacks
 
+#base code
 def generate_options_keyboard(answer_options, right_answer):
     builder = InlineKeyboardBuilder()
 

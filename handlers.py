@@ -6,6 +6,7 @@ import quizCommands
 import db
 
 def registerHandlers(dp, dbName, quiz_data):
+    #modified base code
     @dp.message(Command("start"))
     async def cmd_start(message: types.Message):
         builder = ReplyKeyboardBuilder()
@@ -20,6 +21,7 @@ def registerHandlers(dp, dbName, quiz_data):
         await message.answer(f"Давайте начнем викторину!")
         await quizCommands.new_quiz(message, dbName, quiz_data)
 
+    #added code
     @dp.message(F.text=="Продолжить викторину")
     @dp.message(Command("quizContinue"))
     async def continueQuizHandler(message: types.Message):

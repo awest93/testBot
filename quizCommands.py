@@ -1,6 +1,7 @@
 import utilities
 import db
 
+#modified base code
 async def get_question(current_question_index, quiz_data, message):
     # Получение текущего вопроса из словаря состояний пользователя
     correct_index = quiz_data[current_question_index]['correct_option']
@@ -15,6 +16,7 @@ async def new_quiz(message, dbName, quiz_data):
     await db.restartQuizStats(dbName, user_id)
     await get_question(current_question_index, quiz_data, message)
 
+#added code
 async def continue_quiz(message, dbName, quiz_data):
     user_id = message.from_user.id
     current_question_index = await db.get_quiz_index(dbName, user_id)

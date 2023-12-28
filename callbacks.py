@@ -4,12 +4,14 @@ from aiogram.filters.callback_data import CallbackData
 import db
 import quizCommands
 
+#added code
 class quizCallback(CallbackData, prefix="quizCallback"):
     answerCorrect: bool
     answerIndex: int
 
 def registerCallbacks(quiz_data, dbName, dp):
     @dp.callback_query(quizCallback.filter(F.answerCorrect == True))
+    #modified base code
     async def rightAnswerCallback(query: types.CallbackQuery, callback_data: quizCallback):
         await genericAnswerCallback(query, callback_data)
 
