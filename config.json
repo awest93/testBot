@@ -1,6 +1,6 @@
 {
     "dbName":"quiz_bot.sqlite",
-    "apiToken":"6535203643:AAGdd2cquuNWpKIpVpGsP8tgAsULMTTnr2w",
+    "apiToken":"-",
     "populateDBScript":"populateDB.sql",
     "quizData":
     [
@@ -58,6 +58,59 @@
             "question": "Какой код определяет тип \"Список\" (\"List\")?",
             "options": ["{\"name\":\"apple\", \"color\":\"green\"}}", "{\"apple\", \"banana\", \"cherry\"}", "[\"apple\", \"banana\", \"cherry\"]", "(\"apple\", \"banana\", \"cherry\")"],
             "correct_option": 2
+        }
+    ],
+    "sqlQuizData":
+    [
+        {
+            "question": "Как расшифровывается аббревиатура SQL?",
+            "options": ["Structured Query Language", "Structured Question Language", "Strong Question Language"],
+            "correct_option": 0
+        },
+        {
+            "question": "Какие SQL запросы используются для получения данных из БД?",
+            "options": ["SELECT", "OPEN", "GET", "EXTRACT"],
+            "correct_option": 0
+        },
+        {
+            "question": "Какие SQL запросы используются для изменения данных в БД?",
+            "options": ["UPDATE", "SAVE AS", "SAVE", "MODIFY"],
+            "correct_option": 0
+        },
+        {
+            "question": "запросы используются для удаления данных из БД?",
+            "options": ["DELETE", "REMOVE", "COLLAPSE"],
+            "correct_option": 0
+        },
+        {
+            "question": "запросы используются для добавления новых данных в БД?",
+            "options": ["INSERT INTO", "INSERT NEW", "ADD NEW", "ADD RECORD"],
+            "correct_option": 0
+        },
+        {
+            "question": "Используя SQL, как выбрать поле с названием \"FirstName\" из таблицы \"Persons\"?",
+            "options": ["SELECT FirstName FROM Persons", "SELECT Persons.FirstName", "EXTRACT FirstName FROM Persons"],
+            "correct_option": 0
+        },
+        {
+            "question": "Используя SQL, как выбрать все поля из таблицы \"Persons\"?",
+            "options": ["SELECT * FROM Persons", "SELECT [all] FROM Persons", "SELECT *.Persons", "SELECT Persons"],
+            "correct_option": 0
+        },
+        {
+            "question": "Используя SQL, как выбрать все записи из таблицы \"Persons\" где значение поля \"FirstName\" равно \"Peter\"?",
+            "options": ["SELECT * FROM Persons WHERE FirstName='Peter'", "SELECT * FROM Persons WHERE FirstName<>'Peter'", "SELECT [all] FROM Persons WHERE FirstName LIKE 'Peter'", "SELECT [all] FROM Persons WHERE FirstName='Peter'"],
+            "correct_option": 0
+        },
+        {
+            "question": "Используя SQL, как выбрать все записи из таблицы \"Persons\" где значение поля \"FirstName\" начинается с \"a\"?",
+            "options": ["SELECT * FROM Persons WHERE FirstName LIKE 'a%'", "SELECT * FROM Persons WHERE FirstName='a'", "SELECT * FROM Persons WHERE FirstName='%a%'", "SELECT * FROM Persons WHERE FirstName LIKE '%a'"],
+            "correct_option": 0
+        },
+        {
+            "question": "Оператор OR выбирает записи если ЛЮБОЕ из его условий выполняется. Оператор AND выбирает записи если ВСЕ его условия выполняются.",
+            "options": ["Да", "Нет", "Только при выполнении определённых условий"],
+            "correct_option": 0
         }
     ]
 }
